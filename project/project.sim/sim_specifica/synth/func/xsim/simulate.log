@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Test completato.
+Time: 43600200 ps  Iteration: 0  Process: /tb_ex6/testRoutine  File: C:/Users/eleon/Documents/universita/RL/ex.Specifica/tb_ex6.vhd
+$finish called at time : 43600200 ps : File "C:/Users/eleon/Documents/universita/RL/ex.Specifica/tb_ex6.vhd" Line 265

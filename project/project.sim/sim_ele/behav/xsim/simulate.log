@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Simulation Ended! TEST PASSATO (EXAMPLE)
+Time: 650 ns  Iteration: 0  Process: /testRandRes/test  File: C:/Users/eleon/Documents/universita/RL/Progetto_RL/TestBench/TestRandRes.vhd
+$finish called at time : 650 ns : File "C:/Users/eleon/Documents/universita/RL/Progetto_RL/TestBench/TestRandRes.vhd" Line 188

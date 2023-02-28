@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Simulation Ended! TEST PASSATO (EXAMPLE)
+Time: 152 ns  Iteration: 0  Process: /demux_tb/test  File: C:/Users/eleon/Documents/universita/RL/Progetto_RL/demux_tb.vhd
+$finish called at time : 152 ns : File "C:/Users/eleon/Documents/universita/RL/Progetto_RL/demux_tb.vhd" Line 118
