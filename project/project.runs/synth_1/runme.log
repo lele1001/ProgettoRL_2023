@@ -22,41 +22,36 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15928
+INFO: [Synth 8-7075] Helper process launched with PID 2020
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1247.008 ; gain = 408.957
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1247.762 ; gain = 409.543
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'project_reti_logiche' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:23]
-INFO: [Synth 8-3491] module 'sipo' declared at 'C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:289' bound to instance 'sipo_map' of component 'sipo' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:73]
-INFO: [Synth 8-638] synthesizing module 'sipo' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'sipo' (0#1) [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:301]
-INFO: [Synth 8-3491] module 'choose_reg' declared at 'C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:248' bound to instance 'reg_map' of component 'choose_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:83]
-INFO: [Synth 8-638] synthesizing module 'choose_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:260]
-INFO: [Synth 8-256] done synthesizing module 'choose_reg' (0#1) [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:260]
+INFO: [Synth 8-3491] module 'sipo' declared at 'C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:294' bound to instance 'sipo_map' of component 'sipo' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'sipo' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'sipo' (0#1) [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:306]
+INFO: [Synth 8-3491] module 'choose_reg' declared at 'C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:255' bound to instance 'reg_map' of component 'choose_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'choose_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:267]
+INFO: [Synth 8-256] done synthesizing module 'choose_reg' (0#1) [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:267]
 INFO: [Synth 8-3491] module 'demux' declared at 'C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:176' bound to instance 'demux_map' of component 'demux' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:93]
 INFO: [Synth 8-638] synthesizing module 'demux' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:191]
-WARNING: [Synth 8-614] signal 'reg_out' is read in the process but is not in the sensitivity list [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:199]
-WARNING: [Synth 8-614] signal 'r0' is read in the process but is not in the sensitivity list [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:229]
-WARNING: [Synth 8-614] signal 'r1' is read in the process but is not in the sensitivity list [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:229]
-WARNING: [Synth 8-614] signal 'r2' is read in the process but is not in the sensitivity list [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:229]
-WARNING: [Synth 8-614] signal 'r3' is read in the process but is not in the sensitivity list [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:229]
 INFO: [Synth 8-256] done synthesizing module 'demux' (0#1) [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:191]
 INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche' (0#1) [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:23]
 WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_we driven by constant 0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1338.621 ; gain = 500.570
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1338.703 ; gain = 500.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1338.621 ; gain = 500.570
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1338.703 ; gain = 500.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1338.621 ; gain = 500.570
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1338.703 ; gain = 500.484
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1338.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1338.703 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -65,36 +60,35 @@ Parsing XDC File [C:/Users/eleon/Documents/universita/RL/Progetto_RL/project/pro
 Finished Parsing XDC File [C:/Users/eleon/Documents/universita/RL/Progetto_RL/project/project.srcs/constrs_1/new/clock.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1401.500 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1447.613 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1401.500 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1447.613 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'project_reti_logiche'
-WARNING: [Synth 8-327] inferring latch for variable 'r0_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:209]
-WARNING: [Synth 8-327] inferring latch for variable 'r1_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:210]
-WARNING: [Synth 8-327] inferring latch for variable 'r2_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:211]
-WARNING: [Synth 8-327] inferring latch for variable 'r3_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:212]
-WARNING: [Synth 8-327] inferring latch for variable 'reg_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:202]
+WARNING: [Synth 8-327] inferring latch for variable 'r0_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:211]
+WARNING: [Synth 8-327] inferring latch for variable 'r1_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:212]
+WARNING: [Synth 8-327] inferring latch for variable 'r2_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:213]
+WARNING: [Synth 8-327] inferring latch for variable 'r3_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:214]
 WARNING: [Synth 8-327] inferring latch for variable 'out_en_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:96]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -110,7 +104,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using enco
 WARNING: [Synth 8-327] inferring latch for variable 'o_mem_en_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:149]
 WARNING: [Synth 8-327] inferring latch for variable 'reset_w_reg' [C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd:75]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -124,9 +118,9 @@ Detailed RTL Component Info :
 	   2 Input    8 Bit        Muxes := 4     
 	   6 Input    3 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 1     
-	   4 Input    2 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 6     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
 	   4 Input    1 Bit        Muxes := 1     
 	   5 Input    1 Bit        Muxes := 1     
 	   6 Input    1 Bit        Muxes := 7     
@@ -148,25 +142,25 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3917] design project_reti_logiche has port o_mem_we driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -184,37 +178,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -231,38 +225,38 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |BUFG |     1|
-|2     |LUT2 |    37|
-|3     |LUT3 |    10|
-|4     |LUT4 |     6|
+|2     |LUT2 |    38|
+|3     |LUT3 |    14|
+|4     |LUT4 |     2|
 |5     |FDCE |    40|
-|6     |LD   |     5|
+|6     |LD   |     3|
 |7     |LDC  |    32|
 |8     |IBUF |    12|
 |9     |OBUF |    51|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1447.613 ; gain = 609.395
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1401.500 ; gain = 500.570
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1401.500 ; gain = 563.449
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1447.613 ; gain = 500.484
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1447.613 ; gain = 609.395
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1401.500 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1447.613 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1401.500 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1447.613 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 37 instances were transformed.
-  LD => LDCE: 5 instances
+  A total of 35 instances were transformed.
+  LD => LDCE: 3 instances
   LDC => LDCE: 32 instances
 
-Synth Design complete, checksum: b557ca1d
+Synth Design complete, checksum: c8528b35
 INFO: [Common 17-83] Releasing license: Synthesis
-35 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+35 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1401.500 ; gain = 995.480
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1447.613 ; gain = 1041.793
 INFO: [Common 17-1381] The checkpoint 'C:/Users/eleon/Documents/universita/RL/Progetto_RL/project/project.runs/synth_1/project_reti_logiche.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file project_reti_logiche_utilization_synth.rpt -pb project_reti_logiche_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Feb 28 18:44:38 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 28 21:27:45 2023...

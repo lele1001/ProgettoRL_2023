@@ -105,7 +105,7 @@ begin
 
     o_mem_we <= '0';
 
-    fsm : process (i_clk, i_rst) is
+    fsm : process (i_clk, i_rst, curr_state) is
     begin
         if (i_rst = '1') then
             curr_state <= S0;
@@ -189,28 +189,30 @@ entity demux is
 end demux;
 
 architecture behavioural of demux is
-   signal r0 : std_logic_vector (7 downto 0);
-   signal r1 : std_logic_vector (7 downto 0);
-   signal r2 : std_logic_vector (7 downto 0);
-   signal r3 : std_logic_vector (7 downto 0);
-   signal reg : std_logic_vector (1 downto 0) := (others => '0');
-
+    signal r0 : std_logic_vector (7 downto 0);
+    signal r1 : std_logic_vector (7 downto 0);
+    signal r2 : std_logic_vector (7 downto 0);
+    signal r3 : std_logic_vector (7 downto 0);
+    signal reg : std_logic_vector (1 downto 0) := (others => '0');
+    signal old_reg : std_logic_vector (1 downto 0);
 begin
-    save_reg : process (done_c) is
+    save_reg : process (done_c, reg_out) is
     begin
         if (done_c = '1') then
             reg(1 downto 0) <= reg_out(1 downto 0);
+        else
+            reg <= (others => '0');
         end if;
     end process; 
     
-    data : process (in_mem, rst, re, done_c, reg) is
+    data : process (rst, re, done_c, reg, in_mem) is
     begin
         if (rst = '1') then
             r0 <= (others => '0');
             r1 <= (others => '0');
             r2 <= (others => '0');
             r3 <= (others => '0');
-        else
+        elsif (rst = '0') then
             if ((re = '1') and (done_c = '0')) then
                 if (reg = "00") then
                     r0(7 downto 0) <= in_mem(7 downto 0);
@@ -221,12 +223,17 @@ begin
                 elsif (reg = "11") then
                     r3(7 downto 0) <= in_mem(7 downto 0);
                 end if;
+            else 
+                r0 <= (others => '0');
+                r1 <= (others => '0');
+                r2 <= (others => '0');
+                r3 <= (others => '0');
             end if;
         end if;
     end process;
 
     -- processo che mostra il dato in uscita
-    write_out : process (en) is
+    write_out : process (en, r0, r1, r2, r3) is
     begin
         if (en = '0') then
             reg_z0 <= (others => '0');
@@ -260,23 +267,21 @@ end choose_reg;
 architecture behavioural of choose_reg is
     signal counter : std_logic_vector (1 downto 0) := (others => '0');
 begin
-    read_reg : process (clk, rst, rst_tot) is
+    read_reg : process (clk, rst, rst_tot, we) is
     begin
         if ((rst = '1') or (rst_tot = '1')) then
             counter <= (others => '0');
             reg_out <= (others => '0');
             done_c <= '0';
         else
-            if ((clk'event) and (clk = '1')) then
-                if (we = '1') then
-                    if (counter = "00") then
-                        counter(1) <= '1';
-                        reg_out(1) <= in_wr;
-                    elsif (counter = "10") then
-                        counter <= "11";
-                        reg_out(0) <= in_wr;
-                        done_c <= '1';
-                    end if;
+            if ((clk'event) and (clk = '1') and (we = '1')) then
+                if (counter = "00") then
+                    counter(1) <= '1';
+                    reg_out(1) <= in_wr;
+                else
+                    counter <= "11";
+                    reg_out(0) <= in_wr;
+                    done_c <= '1';
                 end if;
             end if;
         end if;
@@ -301,7 +306,7 @@ entity sipo is
 architecture behavioural of sipo is
     signal temp : std_logic_vector(15 downto 0) := (others => '0');
 begin
-    shift_input : process (clk, rst, rst_tot)
+    shift_input : process (clk, rst, rst_tot, we, re)
     begin
         if ((rst = '1') or (rst_tot = '1')) then
             temp <= (others => '0');
