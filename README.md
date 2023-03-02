@@ -1,4 +1,4 @@
-# Prova Finale di Reti Logiche
+# Prova Finale di Reti Logiche (A.A: 2022-2023)
 
 **EN** - This repository contains the source and some testbenches used for the "Prova Finale di Reti Logiche", one of the three required projects for the bachelor's degree in Computer Science Engineering at Politecnico di Milano. This porject's goal is to describe, using VHDL language, an electronic component able to communicate with a memory and produce in output the value given by it.
 
