@@ -1,4 +1,0 @@
-Time resolution is 1 ps
-Failure: Simulation Ended! TEST PASSATO (EXAMPLE)
-Time: 3700 ns  Iteration: 0  Process: /project_tb/testRoutine  File: C:/Users/eleon/Documents/universita/RL/Progetto_RL/tb_example23_agg.vhd
-$finish called at time : 3700 ns : File "C:/Users/eleon/Documents/universita/RL/Progetto_RL/tb_example23_agg.vhd" Line 156

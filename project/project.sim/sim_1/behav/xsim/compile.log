@@ -1,7 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/eleon/Documents/universita/RL/Progetto_RL/VisualStudio/progetto_cabai.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
-INFO: [VRFC 10-3107] analyzing entity 'demux'
-INFO: [VRFC 10-3107] analyzing entity 'choose_reg'
-INFO: [VRFC 10-3107] analyzing entity 'sipo'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/eleon/Documents/universita/RL/Progetto_RL/tb_example23_agg.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_tb'

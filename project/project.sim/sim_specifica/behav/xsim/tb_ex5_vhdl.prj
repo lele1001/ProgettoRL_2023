@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../../VisualStudio/progetto_cabai.vhd" \
-"../../../../../../ex.Specifica/tb_ex6.vhd" \
-
-# Do not sort compile order
-nosort

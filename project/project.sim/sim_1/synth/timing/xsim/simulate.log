@@ -1,5 +1,0 @@
-Time resolution is 1 ps
-WARNING: "/wrk/ci/prod/2022.2/rdi_builds/continuous/2022_10_14_3671981/data/verilog/src/unisims/LDCE.v" Line 166: Timing violation in scope /project_tb/UUT/demux_map/reg_reg[0]/TChk166_760 at time 3053484 ps $setuphold (posedge G,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,G_dly,D_dly) 
-Failure: Simulation Ended! TEST PASSATO (EXAMPLE)
-Time: 3705071 ps  Iteration: 0  Process: /project_tb/testRoutine  File: C:/Users/eleon/Documents/universita/RL/Progetto_RL/tb_example23_agg.vhd
-$finish called at time : 3705071 ps : File "C:/Users/eleon/Documents/universita/RL/Progetto_RL/tb_example23_agg.vhd" Line 156

@@ -1,4 +1,0 @@
-Time resolution is 1 ps
-Failure: Test completato.
-Time: 56900 ns  Iteration: 0  Process: /tb_ex5/testRoutine  File: C:/Users/eleon/Documents/universita/RL/ex.Specifica/tb_ex5.vhd
-$finish called at time : 56900 ns : File "C:/Users/eleon/Documents/universita/RL/ex.Specifica/tb_ex5.vhd" Line 249
